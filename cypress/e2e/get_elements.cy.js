@@ -1,4 +1,5 @@
 describe('Get Elements', () => {
+
     it('Encontrar/Selecionar elementos', () =>{
         // get() - SELECIONAR ELEMENTOS
         cy.visit('/')
@@ -10,11 +11,11 @@ describe('Get Elements', () => {
 
         // find() SERVE PARA ENCONTRAR ELEMENTOS, GERALMENTE DIMINUIMOS O ESCOPO COM UM GET
         cy.get('#top_header')
-            .find('.fa-use')
+            .find('.fa-user')
 
         // as () - alias - SERVE PARA CRIAR APELIDOS OU ATALHOS PARA GRANDES COMANDOS
-        cy.get('#top_header')
-            .find('.fa-use')
+        cy.get('cabecalho')
+            .find('.fa-user')
     })
     
 })

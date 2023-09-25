@@ -1,10 +1,11 @@
 describe('Get Texts', () => {
-    it('Obter texto de um elemento', () =>{
+
+    it('Obter texto de um elemento', () => {
         cy.visit('/')
             .get('.header-logo')
 
         cy.get('.top_header_left > p')
-        .then((element) =>{
+        .then((element) => {
             console.log(element.text())
             element.hide()
         })

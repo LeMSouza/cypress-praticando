@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",
+    "chai": "^4.3.10",
     "cypress-mochawesome-reporter": "^3.6.0"
   }
 }
